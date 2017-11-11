@@ -4,7 +4,9 @@
  xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 <bean id="restaurantBean" class="org.springcore.Restaurant">
-    <property name="welcomeMsg" value="Welcome to our Restaurant"></property>
+    <constructor-arg ref="teaBean" />
 </bean>
-
+<bean id="teaBean" class="org.springcore.Tea">
+    
+</bean>
 </beans>

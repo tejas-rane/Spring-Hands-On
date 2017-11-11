@@ -1,13 +1,13 @@
 package org.springcore;
 
 public class Restaurant {
-	String welcomeMsg;
-	
-	public void setWelcomeMsg(String welcomeMsg) {
-		this.welcomeMsg = welcomeMsg;
-	}
+	HotDrink hotDrink;
 
-	public void greetCustomer(){
-		System.out.println(welcomeMsg);
+	public Restaurant(HotDrink hotDrink) {
+		super();
+		this.hotDrink = hotDrink;
+	}
+	public void prepareHotDrink(){
+		hotDrink.prepareHotDrink();
 	}
 }
