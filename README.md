@@ -8,3 +8,9 @@ Understanding basic concepts of Spring Framework configuration and etc. <br />
   3.  scope="prototype" and  scope="singleton"  
   4.  **Loading a singleton Bean:** lazy loading vs pre loading : lazy-init="true"=>lazy loading <br />
       beanFactory interface always performs a lazy loading  <br />
+  5.  init-method="init" <br />
+      destroy-method="destroy"<br />
+      default-init-method="init"<br />
+	    default-destroy-method="destroy" <br />  and concept of registerShutdownHook(); i.e closing application context
+  6.  @postConstruct @postDestroy <br />
+      InitializingBean and DisposableBean <br />
