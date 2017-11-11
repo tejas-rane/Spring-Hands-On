@@ -20,5 +20,6 @@ public class TestSpringProject {
 		restaurantObj2.greetCust();
 		Restaurant restaurantObj3 = (Restaurant) context.getBean("restaurantBean");
 		restaurantObj3.greetCust();
+		restaurantObj3.printValueFromPropFile();
 	}
 }

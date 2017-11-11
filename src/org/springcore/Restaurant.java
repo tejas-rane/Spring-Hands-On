@@ -12,10 +12,15 @@ public class Restaurant implements InitializingBean,DisposableBean {
 	HotDrink hotDrink;
 	private List restaurentWaiters;
 	String welcomeMSG;
+	String fromPropFile;
 	/*public Restaurant(HotDrink hotDrink) {
 		super();
 		this.hotDrink = hotDrink;
 	}*/
+public void setFromPropFile(String fromPropFile) {
+		
+		this.fromPropFile = fromPropFile;
+	}
 	public void setWelcomeMSG(String welcomeMSG) {
 		
 		this.welcomeMSG = welcomeMSG;
@@ -37,6 +42,9 @@ public class Restaurant implements InitializingBean,DisposableBean {
 	}
 	public void greetCust(){
 		System.out.println(welcomeMSG);
+	}
+	public void printValueFromPropFile(){
+		System.out.println(fromPropFile);
 	}
 	/*@PostConstruct
 	public void init(){

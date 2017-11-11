@@ -16,8 +16,12 @@
 				<value>Mr Ted</value>
 			</list>
 		</property>
+		<property name="fromPropFile" value="${fromPropFile}"></property>
 	</bean>
-	<bean id="teaBean" class="org.springcore.Tea">
-
+	<bean id="teaBean" class="org.springcore.Tea"></bean>
+	<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+	    <property name="locations">
+	        <value>classpath:spring.properties</value>
+	    </property>
 	</bean>
 </beans>
