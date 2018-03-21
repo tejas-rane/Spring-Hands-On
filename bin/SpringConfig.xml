@@ -14,6 +14,7 @@
 				<value>Mr XYZ</value>
 				<value>Mr Rob</value>
 				<value>Mr Ted</value>
+				<value>Mr Jed</value>
 			</list>
 		</property>
 		<property name="fromPropFile" value="${fromPropFile}"></property>
