@@ -1,4 +1,4 @@
-# Spring-Hands-On
+# Spring Core -Hands-On
 
 Understanding basic concepts of Spring Framework configuration and etc. <br />
   1.  **Dependency Injection using** <br />
